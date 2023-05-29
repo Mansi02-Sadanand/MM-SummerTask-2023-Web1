@@ -1,0 +1,40 @@
+
+*{
+    margin: s10px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color:#ebf0f3 ;
+}
+.articles{
+    border: 2px solid rgb(133, 133, 133);
+    border-radius: 13px;
+    width: 480px;
+    height: 420px;
+    display: grid;
+    margin-left: 10px;
+    justify-items: center;
+    
+}
+
+.arrange {
+    height: 400px;
+    width: 300px;
+    display: grid;
+}
+
+.likes{
+    float: left;
+}
+.thumb{
+    margin-top: 2px;
+}
+
+@media screen and (min-width:700px) {
+    .arrange{
+        grid-template-columns: repeat(3,2fr);
+        gap: 1rem;
+    }
+}
